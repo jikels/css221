@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script src="src/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div
+      class="d-flex align-items-center flex-column justify-content-center h-100 bg-dark text-white"
+    >
+      <form>
+        <button id="alert-motion">
+          Request Device motion
+        </button>
+        <button id="alert-orientation">
+          Request Device orientation
+        </button>
+        <h1>
+          <div
+            class="form-group custom-control custom-switch custom-switch-adaptive"
+          >
+            <input type="checkbox" class="custom-control-input" id="record" />
+            <label class="custom-control-label" for="record">Record</label>
+          </div>
+        </h1>
+
+        <div class="form-group">
+          <label class="control-label form-control-lg" for="contextlabel"
+            >Context</label
+          >
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            id="contextlabel"
+          />
+        </div>
+      </form>
+
+      <div class="alert alert-primary" role="alert" id="debug">
+        Not recording yet...
+      </div>
+    </div>
+  </body>
+</html>
